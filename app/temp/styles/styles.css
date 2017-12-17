@@ -490,7 +490,7 @@ a {
 
 .paragraphs-generic p {
   line-height: 1.65;
-  margin: 1.8rem 0;
+  margin: 0 0 1.8rem 0;
 }
 
 @media (min-width: 530px) {
@@ -558,6 +558,42 @@ a {
   font-weight: 100;
 }
 
+.section-title{
+
+    font-size: 2.0rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 5.0rem;
+
+}
+
+.section-title strong {
+  font-weight: 500;
+}
+
+@media (min-width: 530px) {
+
+  .section-title{
+    font-size: 3.75rem;
+    margin-bottom: 2.0rem
+  }
+}
+
+.section-title__icon {
+  display: block;
+  margin-right: 0.5rem;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 530px) {
+
+  .section-title__icon {
+    margin-bottom: 0;
+    display: inline-block
+  }
+}
+
 .row::after {
   content: "";
   clear:both;
@@ -581,6 +617,11 @@ a {
 }
 
 @media (min-width: 800px) {
+
+  .row__medium-6{
+    float:left;
+    width: 50%;
+  }
 
   .row__medium-4{
     float:left;
@@ -611,6 +652,16 @@ a {
 
 .row--gutters > div {
   padding-right: 65px;
+}
+
+.row--gutters-large {
+  margin-right: -100px;
+}
+
+/*wszystkie divy w srodku guttersa*/
+
+.row--gutters-large > div {
+  padding-right: 100px;
 }
 
 .large-hero {
@@ -700,5 +751,53 @@ a {
   .btn--large {
     font-size: 1.25rem;
     padding: 1.5rem 2.5rem
+  }
+}
+
+.features-block {
+
+  position: relative;
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 530px) {
+
+  .features-block {
+    margin-bottom: 95px;
+    padding-left: 95px
+  }
+}
+
+.features-block__title {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 530px) {
+
+  .features-block__title {
+    font-size: 1.875rem;
+    text-align: left
+  }
+}
+
+.features-block__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 530px) {
+
+  .features-block__image {
+    margin-bottom: none;
+    position: absolute;
+    left: 0;
+    display: inline-block
   }
 }
