@@ -6,6 +6,8 @@
 @import "modules/_page-section";
 @import "modules/_paragraphs-generic";
 @import "modules/_headlines";
+@import "modules/_section-title";
 @import "modules/_row";
 @import "modules/_large-hero";
 @import "modules/_btn";
+@import "modules/_features-block";
