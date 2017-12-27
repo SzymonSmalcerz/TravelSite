@@ -2,6 +2,8 @@
 
   @mixin clearfix;
 /*mobile first !!! defaultowo wszystkie sa atSmallest*/
+
+
   &__4{
     float:left;
     width: 33.33%;
@@ -48,6 +50,21 @@
         float:left;
         width: 63%;
     }
+
+  }
+
+  @mixin atLarge {
+    &__large-4 {
+      width: 33.3%;
+    }
+  }
+
+  &--gutters-small {
+    margin-right: -50px;
+  }
+
+  &--gutters-small > div {
+    padding-right: 50px;
   }
   &--gutters {
     margin-right: -65px;
@@ -64,4 +81,19 @@
   &--gutters-large > div {
     padding-right: 100px;
   }
+
+  &--equal-height-at-large {
+
+    @mixin atLarge {
+      display : flex;
+
+      & > div {
+        display: flex;
+        float: none;
+      }
+    }
+
+  }
+
+
 }
